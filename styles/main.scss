@@ -12,6 +12,7 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 //import other stylesheets
 @import "./header_footer.scss";
 @import "./main_view.scss";
+@import "./about.scss";
 //end of other stylesheet import
 
 html {
@@ -20,10 +21,12 @@ html {
 }
 
 body {
-  background-image: url("../images/main_background.jpg");
+  background-image: url("https://s3.amazonaws.com/BenWinter.co/background.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin-bottom: 60px;
 }
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

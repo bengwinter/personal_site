@@ -1,2 +1,13 @@
 <p>ABOUT PAGE</p>
 <li><a ng-href="#"><i class="fa fa-home"></i>Back To Home View</a></li>
+
+<div class="carousel-container col-sm-offset-1 col-sm-4">
+  <carousel interval="carouselInterval">
+    <slide ng-repeat="slide in slides" active="slide.active">
+      <img class='carousel-image' ng-src="{{slide.image}}">
+      <div class="carousel-caption">
+        <p>{{slide.text}}</p>
+      </div>
+    </slide>
+  </carousel>
+</div>
