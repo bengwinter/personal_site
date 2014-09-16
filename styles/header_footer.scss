@@ -33,11 +33,16 @@
 
     li:hover {
       background-color: #F8F8F8;
+      border-radius: 5px;
       i {
         color: #428bca;
       }
     }
-
+    li.active:hover {
+      i {
+        color: #f8f8f8;
+      } 
+    }
   } 
 }
 
