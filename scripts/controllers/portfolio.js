@@ -2,7 +2,7 @@
 
 angular
   .module('bensiteApp')
-    .controller('AboutCtrl', function ($scope) {
+    .controller('PortfolioCtrl', function ($scope) {
       $scope.awesomeThings = [
         'HTML5 Boilerplate',
         'AngularJS',

@@ -21,14 +21,14 @@
 
     <!-- Add your site or application content here -->
     
-    <div class="navbar navbar-inverse header-footer" role="navigation">
+    <div class="navbar navbar-inverse header-footer" role="navigation" ng-controller='NavbarCtrl'>
       <div class="navbar-inner">
         <div class="container-fluid">
           <ul class="nav nav-pills pull-right">
-            <li><a ng-href="#"><i class="fa fa-home"></i></a></li>
-            <li><a ng-href="#/about"><i class="fa fa-user"></i></a></li>
-            <li><a ng-href="#/portfolio"><i class="fa fa-folder-open-o"></i></a></li>
-            <li><a ng-href="#/contact"><i class="fa fa-envelope"></i></a></li>
+            <li ng-class="{ active: isActive('#/')}"><a ng-href="#"><i class="fa fa-home"></i></a></li>
+            <li ng-class="{ active: isActive('#/about')}"><a ng-href="#/about"><i class="fa fa-user"></i></a></li>
+            <li ng-class="{ active: isActive('#/portfolio')}"><a ng-href="#/portfolio"><i class="fa fa-folder-open-o"></i></a></li>
+            <li ng-class="{ active: isActive('#/contact')}"><a ng-href="#/contact"><i class="fa fa-envelope"></i></a></li>
           </ul>
           <a ng-href="#"><h3>Ben Winter</h3></a>
         </div>
@@ -92,6 +92,8 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/contact.js"></script>
+        <script src="scripts/controllers/portfolio.js"></script>
+        <script src="scripts/controllers/navbar.js"></script>
         <!-- endbuild -->
 </body>
 </html>
