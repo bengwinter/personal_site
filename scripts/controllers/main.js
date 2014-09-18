@@ -4,9 +4,6 @@ angular
   .module('bensiteApp')
     .controller('MainCtrl', function ($scope) {
 
-      $scope.awesomeThings = [
-        'HTML5 Boilerplate',
-        'AngularJS',
-        'Karma'
-      ];
+      $scope.rightWellHeader = "Ben Winter";
+      $scope.rightWellText = "Web Developer, placeholder text, insert headshot photo too";
     });

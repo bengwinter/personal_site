@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name bensiteApp
- * @description
- * # bensiteApp
- *
- * Main module of the application.
- */
 angular
   .module('bensiteApp', [
     'ngAnimate',
@@ -15,7 +7,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider

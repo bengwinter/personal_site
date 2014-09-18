@@ -12,4 +12,5 @@ angular
           text: ['Picture ' + i]
         });
       }
+      
     });
