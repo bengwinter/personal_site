@@ -1,3 +1,11 @@
+//import other stylesheets
+@import "../navbar/navbar.scss";
+@import "../home/home.scss";
+@import "../about/about.scss";
+@import "../contact/contact.scss";
+@import "../portfolio/portfolio.scss";
+//end of other stylesheet import
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
@@ -9,11 +17,6 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import "font-awesome/scss/font-awesome";
 // end of font-awesome import
 
-//import other stylesheets
-@import "../navbar/navbar.scss";
-@import "../home/home.scss";
-@import "../about/about.scss";
-//end of other stylesheet import
 
 html {
   position: relative;
