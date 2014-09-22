@@ -21,7 +21,7 @@
       </div>
       <div class="form-group  col-sm-12" show-errors>
         <label class="control-label">Message</label>
-        <input type="text" class="form-control" name="message" ng-model="contact.message" required placeholder="Please enter your message here" />
+        <textarea class="form-control form-message" name="message" ng-model="contact.message" required placeholder="Please enter your message here" />
         <p class="help-block" ng-if="contactForm.message.$error.required">Please enter a message</p>
       </div>
       <div class="text-center">
