@@ -11,7 +11,6 @@ angular
         $scope.$broadcast('show-errors-check-validity');
         
         if ($scope.contactForm.$valid) {
-          $scope.submitMessage = 'Thank you for contacting me. I will get back to you within the next 48 hours.';
           $scope.reset();
 
           var contactFirst = $scope.contactForm.firstName.$viewValue;
@@ -20,16 +19,19 @@ angular
           var contactMessage = $scope.contactForm.message.$viewValue;
 
           var data = {firstName: contactFirst, lastName: contactLast, email: contactEmail, message: contactMessage};
-
+          //http://localhost:4567/mail
           $http({
               method  : "POST",
-              url     : "http://localhost:4567/mail",
+              url     : "http://sendgrind-sinatra.herokuapp.com/mail",
               data    : $.param(data),
               headers : { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
           }).success(function() {
             console.log("success");
+            $scope.submitMessage = 'Thank you for contacting me. I will get back to you within the next 48 hours.';
           }).error(function() {
-              console.log("error");
+            console.log("error");
+            $scope.submitMessage = 'Error';
+ 
           });
         };
       }
