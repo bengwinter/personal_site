@@ -24,8 +24,7 @@ angular
           $http({
               method  : "POST",
               url     : "http://localhost:4567/mail",
-              data    : data,
-              type    : JSON,
+              data    : $.param(data),
               headers : { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
           }).success(function() {
             console.log("success");
