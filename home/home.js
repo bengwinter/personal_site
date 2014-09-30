@@ -3,8 +3,7 @@
 angular
   .module('bensiteApp')
     .controller('HomeCtrl', function ($scope) {
-      $scope.rightWellHeader = "Navigation Bar";
-      $scope.rightWellText = "Placeholder text";
+      $scope.rightWellHeader = "Site Map";
       $scope.leftWellHeader = "Ben Winter";
-      $scope.leftWellText = "Web Developer, placeholder text, insert headshot photo too";
+      $scope.leftWellText = "Full Stack Web Developer, UI/UX Designer, Growth Hacker"
     });

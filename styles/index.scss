@@ -1,11 +1,4 @@
-//import other stylesheets
-@import "../navbar/navbar.scss";
-@import "../home/home.scss";
-@import "../about/about.scss";
-@import "../contact/contact.scss";
-@import "../portfolio/portfolio.scss";
-//end of other stylesheet import
-
+//import twitter bootstrap
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
@@ -33,3 +26,16 @@ body {
 }
 
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.content-container {
+  background-color: rgba(255,255,255,0.4);
+  min-height: 300px;
+}
+
+//import section stylesheets
+@import "../navbar/navbar.scss";
+@import "../home/home.scss";
+@import "../about/about.scss";
+@import "../contact/contact.scss";
+@import "../portfolio/portfolio.scss";
+//end of section stylesheet import
