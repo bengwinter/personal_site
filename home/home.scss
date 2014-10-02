@@ -2,6 +2,38 @@
   padding-top: 3em;
 }
 
+.home-about {
+  h2 {
+    font-weight: 700;
+    font-size: 3em;
+  }
+}
 .home-nav-icon {
   padding-right: 5px;
+}
+
+.home-navlist-container {
+  h5 {
+    font-weight: 700;
+  }
+}
+
+.bullet {
+  font-size: 1.5em;
+  font-weight: 500;
+  i {
+    font-size: .5em;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+.no-display {
+  display: none;
+}
+
+.home-photo {
+  max-width: 60% !important;
 }

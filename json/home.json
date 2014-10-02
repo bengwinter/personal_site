@@ -1,7 +1,6 @@
 [{
     "rightHeader": "Ben Winter",
-    "rightSubheader": "Web Developer - UI/UX Designer - Growth Hacker",
-    "rightText": "I have been in the startup space for the last 4 years. During that time, I have been involved in a wide variety of functional areas which include marketing, UI/UX design, web analytics, growth hacking. I am also a full stack web developer with a focus in RoR and AngularJS. I am currently working as a freelance consultant helping companies adjust feature sets and improve the UI/UX experience of their products. I am also currently working on a two music projects.",
-    "leftHeader": "Site Map",
-    "rightSubheader": "For more information, please visit the sections below."
+    "subheaderList": [{"title": "Web Developer", "iconClass": ""}, {"title": "Growth Hacker", "iconClass": ""}, {"title": "UI/UX Designer", "iconClass": "no-display"}],
+    "leftHeader": "To learn more, please visit the sections below.",
+    "homePicUrl": "https://s3.amazonaws.com/BenWinter.co/home_me_pic.png"
 }]

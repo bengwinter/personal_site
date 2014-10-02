@@ -3,17 +3,16 @@
 angular
   .module('bensiteApp')
     .controller('AboutCtrl', function ($scope, TextService) {
-      $scope.carouselInterval = 3000;
-      $scope.rightWellHeader = "About Me";
-      $scope.rightWellText = "Placeholder Text";
-      $scope.leftWellHeader = "About Me Carousel";
-      var slides = $scope.slides = [];
-      
-      for (var i=1; i<9; i++) {
-        slides.push({
-          image: 'https://s3.amazonaws.com/BenWinter.co/about_' + i + '.jpg',
-          text: ['Picture ' + i]
-        });
-      }
+
+      $scope.carouselInterval = 4000;
+      $scope.slides = [];
+
+      TextService.getText('about.json').success(function(data){
+        $scope.rightHeader = data[0]["rightHeader"];
+        $scope.rightText = data[0]["rightText"];
+        $scope.slides = data[0]["carouselSlides"];
+        $scope.facts = data[0]["funFacts"];
+      });
+
       
     });

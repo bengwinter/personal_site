@@ -1,17 +1,25 @@
-<div class="col-sm-offset-1 col-sm-3 main-view-container">
-  <div class="well sidebar-nav content-container">
-    <h3>{{leftHeader}}</h3>
+<div class="col-sm-offset-2 col-sm-8 main-view-container">
+  <div class='well content-container'>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 center-text home-about">
+        <img src="{{homePicUrl}}" alt="Ben Winter Picture" class="img-circle home-photo">
+        <h2>{{rightHeader}}</h2>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 center-text">
+        <span ng-repeat="b in bullets" class="bullet">
+          {{b.title}} <i class="fa fa-circle {{b.iconClass}}"></i>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="col-sm-offset-3 col-sm-6 main-view-container">
+  <div class="well sidebar-nav home-navlist-container">
+    <h5>{{leftHeader}}</h5>
     <ul class="nav nav-list home-nav">
       <li><a ng-href="#/about"><i class="fa fa-user home-nav-icon"></i>About Me</a></li>
       <li><a ng-href="#/portfolio"><i class="fa fa-folder-open-o home-nav-icon"></i>Portfolio</a></li>
-      <li><a ng-href="#/contact"><i class="fa fa-envelope home-nav-icon"></i>Contact</a></li>
+      <li><a ng-href="#/contact"><i class="fa fa-envelope home-nav-icon"></i>Contact Me</a></li>
     </ul>
   </div>
-</div>
-<div class="col-sm-offset-1 col-sm-5 main-view-container">
-<div class='well content-container'>
-    <h2>{{rightHeader}}</h2>
-    <h4>{{rightSubheader}}</h4>
-    <p>{{rightText}}</p>
-  </div>
-</div>
+</div> -->
