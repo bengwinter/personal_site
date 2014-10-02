@@ -1,0 +1,9 @@
+[{
+    "header": "My Current Work",
+    "workList": [
+      {"type": "project", "name": "Above The Tree Line", "desc": "TBD", "languages": "Ruby on Rails", "website": "", "status": "In Development", "img": "", "role": ""},
+      {"type": "project", "name": "MusicMaven", "desc": "TBD", "languages": "Ruby on Rails", "website": "", "status": "In Development", "img": "", "role": ""},
+      {"type": "clientWork", "name": "Growth Hacking", "desc": "I am currently working on a  ", "role": ""},
+      {"type": "clientWork", "name": "UI/UX Design and Analytics Tracking", "desc": "TBD", "role": ""}
+    ]
+}]

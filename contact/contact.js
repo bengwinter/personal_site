@@ -2,9 +2,15 @@
 
 angular
   .module('bensiteApp')
-    .controller('ContactCtrl', function ($scope, $http) {
-      $scope.WellHeader = "Contact Me";
-      $scope.WellText = "To contact me, please fill out the form below. I will respond within the next 24-48 hours.";
+    .controller('ContactCtrl', function ($scope, $http, TextService) {
+
+      TextService.getText('contact.json').success(function(data){
+        $scope.header = data[0]["header"];
+        $scope.subheader = data[0]["subheader"];
+        $scope.submitMessageSuccess = data[0]["submitMessageSuccess"];
+        $scope.submitMessageFailure = data[0]["submitMessageFailure"];
+      });
+
       $scope.submitMessage = "";
       $scope.submitMessageClass = "no-message";
 
@@ -28,13 +34,12 @@ angular
               headers : { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
           }).success(function() {
             console.log("success");
-            $scope.submitMessage = 'Thank you for contacting me. I will get back to you shortly.';
+            $scope.submitMessage = $scope.submitMessageSuccess;
             $scope.submitMessageClass = 'alert-success alert';
           }).error(function() {
             console.log("error");
             $scope.submitMessageClass = 'alert-danger alert';
-            $scope.submitMessage = 'There was an error submitting your request.';
-            
+            $scope.submitMessage = $scope.submitMessageFailure;
           });
         };
       }

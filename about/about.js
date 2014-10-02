@@ -2,7 +2,7 @@
 
 angular
   .module('bensiteApp')
-    .controller('AboutCtrl', function ($scope) {
+    .controller('AboutCtrl', function ($scope, TextService) {
       $scope.carouselInterval = 3000;
       $scope.rightWellHeader = "About Me";
       $scope.rightWellText = "Placeholder Text";

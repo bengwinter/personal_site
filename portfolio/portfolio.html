@@ -1,22 +1,10 @@
-<div class="carousel-container col-sm-offset-1 col-sm-5 about-view-container">
-  <div class="well">
-    <h3>{{leftWellHeader}}</h3>
-    <carousel interval="carouselInterval" disable-animation="true">
-      <slide ng-repeat="slide in slides" active="slide.active">
-        <img class='carousel-image' ng-src="{{slide.image}}">
-        <div class="carousel-caption">
-          <p>{{slide.text}}</p>
-        </div>
-      </slide>
-    </carousel>
-  </div>
-</div>
-<div class="col-sm-offset-.5 col-sm-5 about-view-container">
-  <div class="well sidebar-nav content-container">
-    <h3>{{rightWellHeader}}</h3>
-    <p>{{rightWellText}}</p>
+<div class="col-sm-offset-3 col-sm-6 main-view-container">
+  <div class='well content-container row'>
+    <h3>{{header}}</h3>
     <ul class="nav nav-list">
       <li><a ng-href="#"><i class="fa fa-home"></i>Back To Home View</a></li>
     </ul>
+  </div>
+
   </div>
 </div>
