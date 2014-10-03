@@ -5,15 +5,20 @@
       <div class="portfolio-list-container">
         <h5>{{projectsHeader}}</h5>
         <ul class='nav'>
-          <li ng-repeat="project in projects"><i class="fa {{project.icon}}"></i>{{project.name}}</li>
+          <li ng-repeat="project in projects" ng-click="display(project)"><i class="fa {{project.icon}}"></i>{{project.name}}</li>
         </ul>
         <h5>{{positionsHeader}}</h5>
-        <ul>
-          <li ng-repeat="position in positions"><i class="fa {{position.icon}}"></i>{{position.name}}</li>
+        <ul class='nav'>
+          <li ng-repeat="position in positions" ng-click="display(position)"><i class="fa {{position.icon}}"></i>{{position.name}}</li>
         </ul>
       </div>
     </div>
     <div class="col-sm-8">
+      <h4>{{selected.name}}</h4>
+      <p>{{selected.desc}}</p>
+      <p>Role: <span>{{selected.role}}</span></p>
+      <p>Stage: <span>{{selected.stage}}</span></p>
+      <p>Website <span>{{selected.url}}</span></p>
     </div>
   </div>
 

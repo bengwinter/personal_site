@@ -12,4 +12,13 @@ angular
         $scope.projects = data[0]["projectList"];
       });
 
+      $scope.display = function(position) {
+        $scope.selected = position
+      };
+
+      $scope.isActive = function (viewLocation) { 
+        
+        
+      };
+
     });
