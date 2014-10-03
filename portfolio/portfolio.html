@@ -1,9 +1,20 @@
-<div class="col-sm-offset-3 col-sm-6 main-view-container">
+<div class="col-sm-offset-2 col-sm-8 main-view-container">
   <div class='well content-container row'>
-    <h3>{{header}}</h3>
-    <ul class="nav nav-list">
-      <li><a ng-href="#"><i class="fa fa-home"></i>Back To Home View</a></li>
-    </ul>
+    <h3 class="main-header">{{header}}</h3>
+    <div class="col-sm-4">
+      <div class="portfolio-list-container">
+        <h5>{{projectsHeader}}</h5>
+        <ul class='nav'>
+          <li ng-repeat="project in projects"><i class="fa {{project.icon}}"></i>{{project.name}}</li>
+        </ul>
+        <h5>{{positionsHeader}}</h5>
+        <ul>
+          <li ng-repeat="position in positions"><i class="fa {{position.icon}}"></i>{{position.name}}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-8">
+    </div>
   </div>
 
   </div>

@@ -31,6 +31,11 @@ body {
   background-color: rgba(255,255,255,0.4);
 }
 
+.main-header {
+  font-weight: 700;
+  font-size: 2em;
+}
+
 //import section stylesheets
 @import "../navbar/navbar.scss";
 @import "../home/home.scss";

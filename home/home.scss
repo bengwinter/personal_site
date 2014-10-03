@@ -7,19 +7,29 @@
     font-weight: 700;
     font-size: 3em;
   }
+  h5 {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
 }
 .home-nav-icon {
   padding-right: 5px;
 }
 
-.home-navlist-container {
+.nav-list-container {
+  background-color: rgba(255,255,255,0.8);
+
+  span {
+    padding: 0 1em;
+    font-size: 1.25em;
+  }
   h5 {
     font-weight: 700;
   }
 }
 
 .bullet {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 500;
   i {
     font-size: .5em;

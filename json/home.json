@@ -1,5 +1,6 @@
 [{
-    "rightHeader": "Ben Winter",
+    "header": "Ben Winter",
+    "subHeader": "Boston, MA",
     "subheaderList": [{"title": "Web Developer", "iconClass": ""}, {"title": "Growth Hacker", "iconClass": ""}, {"title": "UI/UX Designer", "iconClass": "no-display"}],
     "leftHeader": "To learn more, please visit the sections below.",
     "homePicUrl": "https://s3.amazonaws.com/BenWinter.co/home_me_pic.png"
