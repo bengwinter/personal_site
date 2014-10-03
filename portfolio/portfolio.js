@@ -10,15 +10,13 @@ angular
         $scope.positions = data[0]["workList"];
         $scope.projectsHeader = data[0]["projectsHeader"];
         $scope.projects = data[0]["projectList"];
+        $scope.selected = data[0]["projectList"][0];
       });
 
       $scope.display = function(position) {
-        $scope.selected = position
+        $scope.selected = position;
       };
 
-      $scope.isActive = function (viewLocation) { 
-        
-        
-      };
+
 
     });

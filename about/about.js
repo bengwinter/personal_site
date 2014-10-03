@@ -2,7 +2,7 @@
 
 angular
   .module('bensiteApp')
-    .controller('AboutCtrl', function ($scope, TextService) {
+    .controller('AboutCtrl', function ($scope, $interval, TextService) {
 
       $scope.carouselInterval = 4000;
       $scope.slides = [];
