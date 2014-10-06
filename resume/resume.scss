@@ -1,0 +1,16 @@
+.resume-modal {
+  text-align: center;
+  
+  .modal-header {
+    h2 {
+      display: inline-block;
+    }
+
+    .close {
+      color: red;
+    }
+  }
+  img {
+    overflow: hidden;
+  }
+}

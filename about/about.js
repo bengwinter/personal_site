@@ -33,11 +33,12 @@ angular
 
       var factTimeout = $timeout($scope.onTimeout,5000);
 
-      $scope.openResume = function () {
+      $scope.openResume = function (size) {
         var resumeModal = $modal.open({
           templateUrl: 'resume/resume.html',
-          controller: 'ResumeModalCtrl'
+          controller: 'ResumeModalCtrl',
+          size: size
         });
       };
-
+      
     });

@@ -1,4 +1,10 @@
-<div class="content-container">
-  <h2>My Resume</h2>
-  <button class="btn btn-warning" ng-click="closeResume()">Cancel</button>
+<div class="content-container resume-modal">
+  <div class="modal-header">
+    <h2 class="modal-title">My Resume</h2>
+    <button type="button" class="close" ng-click="closeResume()"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  </div>
+  <img class='resume-image' ng-src="{{resumeImageUrl}}">
+  <div class='modal-footer'>
+    <button class="btn btn-danger" ng-click="closeResume()">Close</button>
+  </div>
 </div>
