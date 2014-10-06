@@ -2,7 +2,7 @@
 
 angular
   .module('bensiteApp')
-    .controller('AboutCtrl', function ($scope, $timeout, TextService) {
+    .controller('AboutCtrl', function ($scope, $timeout, $modal, TextService) {
 
       $scope.carouselInterval = 4000;
       $scope.slides = [];
@@ -14,6 +14,7 @@ angular
         $scope.facts = data[0]["funFacts"];
         $scope.funFact = $scope.facts[0]["fact"];
         $scope.resumeText = data[0]["resumeText"];
+        $scope.resumeImageUrl = data[0]["resumeImageUrl"];
       });
 
       
@@ -32,5 +33,11 @@ angular
 
       var factTimeout = $timeout($scope.onTimeout,5000);
 
-      
+      $scope.openResume = function () {
+        var resumeModal = $modal.open({
+          templateUrl: 'resume/resume.html',
+          controller: 'ResumeModalCtrl'
+        });
+      };
+
     });
