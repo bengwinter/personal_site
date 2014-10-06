@@ -18,5 +18,9 @@ angular
       };
 
 
+      $scope.listActive = function (id) { 
+        return id === $scope.selected.id;
+      };
+
 
     });

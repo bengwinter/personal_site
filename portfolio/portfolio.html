@@ -5,11 +5,11 @@
       <div class="portfolio-list-container">
         <h5>{{projectsHeader}}</h5>
         <ul class='nav'>
-          <li ng-repeat="project in projects" ng-click="display(project)" ng-class="{ active: isActive(project.id)}" ><i class="fa {{project.icon}}"></i>{{project.name}}</li>
+          <li ng-repeat="project in projects" ng-click="display(project)" ng-class="{ active: listActive(project.id)}" ><i class="fa {{project.icon}}"></i>{{project.name}}</li>
         </ul>
         <h5>{{positionsHeader}}</h5>
         <ul class='nav'>
-          <li ng-repeat="position in positions" ng-click="display(position)"><i class="fa {{position.icon}}"></i>{{position.name}}</li>
+          <li ng-repeat="position in positions" ng-click="display(position)" ng-class="{ active: listActive(position.id)}"><i class="fa {{position.icon}}"></i>{{position.name}}</li>
         </ul>
       </div>
     </div>

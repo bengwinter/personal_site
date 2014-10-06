@@ -13,8 +13,6 @@ angular
         $scope.slides = data[0]["carouselSlides"];
         $scope.facts = data[0]["funFacts"];
         $scope.funFact = $scope.facts[0]["fact"];
-        $scope.resumeText = data[0]["resumeText"];
-        $scope.resumeImageUrl = data[0]["resumeImageUrl"];
       });
 
       
