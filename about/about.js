@@ -14,5 +14,22 @@ angular
         $scope.facts = data[0]["funFacts"];
       });
 
+      // $scope.value = 0;
+      // $scope.funFact = $scope.facts[$scope.value]["fact"];
+
+      // var intervalObj = $interval(function() {
+      //   $scope.value += 1;
+      //   if($scope.value == 10)
+      //   {
+      //     $interval.cancel(intervalObj);
+      //   }
+      // }, 500);
+
+      // $scope.funFactRotation = function() {
+
+      //   $scope.funFac
+        
+      // }
+
       
     });
