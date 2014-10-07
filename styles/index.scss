@@ -1,5 +1,5 @@
 //import twitter bootstrap
-$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$icon-font-path: "../components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -15,7 +15,7 @@ $orange: #CA622D;
 
 
 //font-awesome
-$fa-font-path: "../bower_components/font-awesome/fonts";
+$fa-font-path: "../components/font-awesome/fonts";
 @import "font-awesome/scss/font-awesome";
 // end of font-awesome import
 
