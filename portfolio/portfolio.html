@@ -1,7 +1,7 @@
 <div class="col-sm-offset-2 col-sm-8 main-view-container">
   <div class='well content-container row'>
-    <h3 class="main-header">{{header}}</h3>
-    <div class="col-sm-4">
+    <div class="col-sm-4 left-side-container">
+      <h3 class="main-header">{{header}}</h3>
       <div class="portfolio-list-container">
         <h5>{{projectsHeader}}</h5>
         <ul class='nav'>
@@ -13,12 +13,15 @@
         </ul>
       </div>
     </div>
-    <div class="col-sm-8">
-      <h4>{{selected.name}}</h4>
-      <p>{{selected.desc}}</p>
-      <p>Role: <span>{{selected.role}}</span></p>
-      <p>Stage: <span>{{selected.stage}}</span></p>
-      <p>Website <span>{{selected.url}}</span></p>
+    <div class="col-sm-8 individual-project">
+      <div class='text-center'>
+        <h4>{{selected.name}}</h4>
+        <p class='description'>{{selected.desc}}</p>
+      </div>
+      
+      <p><span>Role:</span>{{selected.role}}</p>
+      <p><span>Status:</span>{{selected.status}}</p>
+      <p class="{{selected.urlClass}}"><span>Website:</span><a href="{{selected.url}}" target="_blank">{{selected.displayUrl}}</a></p>
     </div>
   </div>
 

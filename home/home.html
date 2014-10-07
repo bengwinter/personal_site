@@ -7,7 +7,7 @@
         <h5>{{subHeader}}</h5>
       </div>
       <div class="col-sm-10 col-sm-offset-1 center-text">
-        <span ng-repeat="b in bullets" class="bullet">
+        <span ng-repeat="b in bullets" class="bullet {{b.colorClass}}">
           {{b.title}} <i class="fa fa-circle {{b.iconClass}}"></i>
         </span>
       </div>
@@ -15,10 +15,10 @@
   </div>
   <div class='well nav-list-container'>
     <div class='row'>
-      <div class="col-sm-10 col-sm-offset-1 center-text">
-        <span><a ng-href="#/about"><i class="fa fa-user home-nav-icon"></i>About Me</a></span>
-        <span><a ng-href="#/portfolio"><i class="fa fa-folder-open-o home-nav-icon"></i>Portfolio</a></span>
-        <span><a ng-href="#/contact"><i class="fa fa-envelope home-nav-icon"></i>Contact Me</a></span>
+      <div class="col-sm-10 col-sm-offset-1 center-text home-nav">
+        <span><a ng-href="#/about"><i class="fa fa-user"></i>About Me</a></span>
+        <span><a ng-href="#/portfolio"><i class="fa fa-folder-open-o"></i>Portfolio</a></span>
+        <span><a ng-href="#/contact"><i class="fa fa-envelope"></i>Contact Me</a></span>
       </div>
     </div>
   </div>

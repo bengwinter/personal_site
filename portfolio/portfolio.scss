@@ -1,6 +1,9 @@
-.portfolio-list-container {
+.left-side-container {
   background-color: rgba(255,255,255,0.7);
+}
 
+.portfolio-list-container {
+  padding-left: .5em;
 
   h5 {
     font-weight: 500;
@@ -9,7 +12,7 @@
 
   ul {
     list-style-type: none;
-    padding-left: 1.5em;
+    padding-left: 1em;
 
     i {
       padding-right: .5em;
@@ -22,8 +25,37 @@
     }
 
     li.active {
-      color: #316897;
+      color: $dark-blue;
       font-weight: 700;
     }
+  }
+}
+
+.individual-project {
+  padding-top: 3em;
+  h4 {
+    font-weight: 800;
+    font-size: 2em;
+    color: $dark-blue;
+  }
+  
+  .description {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+
+    span {
+      font-size: 1.2em;
+      font-weight: 700;
+      padding-right: .35em;
+    }
+  }
+
+  .no-url {
+    display: none;
   }
 }

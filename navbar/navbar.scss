@@ -1,6 +1,6 @@
 .header-footer {
   background-color: rgba(0,0,0,0.8);
-  color: #F8F8F8;
+  color: $light-grey;
   border: 0;
   border-radius: 0;
 
@@ -17,31 +17,31 @@
   }
 
   a {
-    color: #F8F8F8;
+    color: $light-grey;
   }
 
   a.active {
-    color: #428bca;
+    color: $link-blue;
   }
 
   .nav-pills {
     background-color: inherit;
     i {
       font-size: 2em;
-      color: #F8F8F8;
+      color: $light-grey;
     }
 
     li:hover {
-      background-color: #F8F8F8;
+      background-color: $light-grey;
       border-radius: 5px;
       i {
-        color: #428bca;
+        color: $link-blue;
       }
     }
     li.active:hover {
       i {
-        color: #f8f8f8;
-      } 
+        color: $light-grey;
+      }
     }
   } 
 }
