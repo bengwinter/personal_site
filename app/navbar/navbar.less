@@ -1,6 +1,8 @@
+@import url("../styles/colors.less");
+
 .header-footer {
   background-color: rgba(0,0,0,0.8);
-  color: $light-grey;
+  color: @light-grey;
   border: 0;
   border-radius: 0;
 
@@ -17,30 +19,30 @@
   }
 
   a {
-    color: $light-grey;
+    color: @light-grey;
   }
 
   a.active {
-    color: $link-blue;
+    color: @link-blue;
   }
 
   .nav-pills {
     background-color: inherit;
     i {
       font-size: 2em;
-      color: $light-grey;
+      color: @light-grey;
     }
 
     li:hover {
-      background-color: $light-grey;
+      background-color: @light-grey;
       border-radius: 5px;
       i {
-        color: $link-blue;
+        color: @link-blue;
       }
     }
     li.active:hover {
       i {
-        color: $light-grey;
+        color: @light-grey;
       }
     }
   } 

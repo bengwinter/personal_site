@@ -5,16 +5,18 @@
     <title>Ben Winter</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link href='http://fonts.googleapis.com/css?family=Overlock:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Overlock:400,700,900,400italic,700italic,900italic'>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="about/about.scss">
-    <link rel="stylesheet" href="contact/contact.scss">
-    <link rel="stylesheet" href="home/home.scss">
-    <link rel="stylesheet" href="navbar/navbar.scss">
-    <link rel="stylesheet" href="portfolio/portfolio.scss">
-    <link rel="stylesheet" href="resume/resume.scss">
-    <link rel="stylesheet" href="styles/index.scss">
+
+    <link rel="stylesheet/less" type="text/css" href="styles/index.less">
+    <link rel="stylesheet/less" type="text/css" href="about/about.less">
+    <link rel="stylesheet/less" type="text/css" href="contact/contact.less">
+    <link rel="stylesheet/less" type="text/css" href="home/home.less">
+    <link rel="stylesheet/less" type="text/css" href="navbar/navbar.less">
+    <link rel="stylesheet/less" type="text/css" href="portfolio/portfolio.less">
+    <link rel="stylesheet/less" type="text/css" href="resume/resume.less">
+    
   </head>
 
   <body ng-app="bensiteApp">
@@ -42,6 +44,7 @@
     <script src="https://code.angularjs.org/1.2.24/angular-sanitize.min.js"></script>
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
 
+    <script src="components/libraries/less-1.7.5.min.js"></script>
 
     <script src="app.js"></script>
     <script src="home/home.js"></script>
