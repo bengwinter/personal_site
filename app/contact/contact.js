@@ -29,7 +29,7 @@ angular
           //http://localhost:4567/mail
           $http({
               method  : "POST",
-              url     : "http://sendgrind-sinatra.herokuapp.com/mail",
+              url     : CONTACT_DOMAIN,
               data    : $.param(data),
               headers : { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
           }).success(function() {
