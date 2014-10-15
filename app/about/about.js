@@ -4,7 +4,7 @@ angular
   .module('bensiteApp')
     .controller('AboutCtrl', function ($scope, $timeout, $modal, TextService) {
 
-      $scope.carouselInterval = 4000;
+      $scope.carouselInterval = 8000;
       $scope.slides = [];
 
       TextService.getText('about.json').success(function(data){

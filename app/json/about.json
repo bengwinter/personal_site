@@ -10,12 +10,15 @@
       {"fact": "I am avid Boston sports fan."}
     ],
     "carouselSlides": [
-      {"title": "Camp Jabberwocky", "image": "https://s3.amazonaws.com/BenWinter.co/about_1.jpg"},
+      {"title": "Martha's Vineyard", "image": "https://s3.amazonaws.com/BenWinter.co/about_4.jpg"},
       {"title": "Fenway Park", "image": "https://s3.amazonaws.com/BenWinter.co/about_2.jpg"},
+      {"title": "Boston Skyline", "image": "https://s3.amazonaws.com/BenWinter.co/about_8.jpg"}
+    ],
+    "otherSlides": [
+      {"title": "Camp Jabberwocky", "image": "https://s3.amazonaws.com/BenWinter.co/about_1.jpg"},
       {"title": "My Family", "image": "https://s3.amazonaws.com/BenWinter.co/about_3.jpg"},
       {"title": "Lucy", "image": "https://s3.amazonaws.com/BenWinter.co/about_5.jpg"},
       {"title": "Tel Aviv", "image": "https://s3.amazonaws.com/BenWinter.co/about_6.jpg"},
-      {"title": "Jabberwocky Friends", "image": "https://s3.amazonaws.com/BenWinter.co/about_7.jpg"},
-      {"title": "Martha's Vineyard", "image": "https://s3.amazonaws.com/BenWinter.co/about_4.jpg"}
+      {"title": "Jabberwocky Friends", "image": "https://s3.amazonaws.com/BenWinter.co/about_7.jpg"}
     ]
 }]
