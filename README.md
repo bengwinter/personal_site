@@ -1,1 +1,1 @@
-#### Github Repo to my Personal Website currently being redone as an Angular site
+#### Github Repo for Personal Site built in AngularJS
