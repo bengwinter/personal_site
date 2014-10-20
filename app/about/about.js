@@ -11,25 +11,25 @@ angular
         $scope.rightHeader = data[0]["rightHeader"];
         $scope.rightText = data[0]["rightText"];
         $scope.slides = data[0]["carouselSlides"];
-        $scope.facts = data[0]["funFacts"];
-        $scope.funFact = $scope.facts[0]["fact"];
+        // $scope.facts = data[0]["funFacts"];
+        // $scope.funFact = $scope.facts[0]["fact"];
       });
 
       
-      var factNumber = 0;
+      // var factNumber = 0;
 
-      $scope.onTimeout = function(){
-        if (factNumber < ($scope.facts.length - 1)){
-          factNumber++;
-        } else {
-          factNumber = 0;
-        }
+      // $scope.onTimeout = function(){
+      //   if (factNumber < ($scope.facts.length - 1)){
+      //     factNumber++;
+      //   } else {
+      //     factNumber = 0;
+      //   }
 
-        $scope.funFact = $scope.facts[factNumber]["fact"];
-        factTimeout = $timeout($scope.onTimeout,5000);
-      }
+      //   $scope.funFact = $scope.facts[factNumber]["fact"];
+      //   factTimeout = $timeout($scope.onTimeout,5000);
+      // }
 
-      var factTimeout = $timeout($scope.onTimeout,5000);
+      // var factTimeout = $timeout($scope.onTimeout,5000);
 
       $scope.openResume = function (size) {
         var resumeModal = $modal.open({
