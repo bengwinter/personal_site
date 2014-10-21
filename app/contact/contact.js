@@ -18,7 +18,6 @@ angular
         $scope.$broadcast('show-errors-check-validity');
         
         if ($scope.contactForm.$valid) {
-          $scope.reset();
 
           var contactFirst = $scope.contactForm.firstName.$viewValue;
           var contactLast = $scope.contactForm.lastName.$viewValue;
@@ -36,6 +35,7 @@ angular
             console.log("success");
             $scope.submitMessage = $scope.submitMessageSuccess;
             $scope.submitMessageClass = 'alert-success alert';
+            $scope.reset();
           }).error(function() {
             console.log("error");
             $scope.submitMessageClass = 'alert-danger alert';
