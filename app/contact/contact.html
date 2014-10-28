@@ -26,7 +26,7 @@
       </div>
       <div class="text-center col-sm-12">
         <button class="btn btn-link reset-link" ng-click="reset()">Reset Form</button>
-        <button class="btn btn-primary btn-lg contact-button" ng-click="save()">Submit</button>
+        <button class="btn btn-primary btn-lg contact-button" ng-click="save()" ng-disabled="contactForm.$invalid">Submit</button>
       </div>
     </form>
     <div class="{{submitMessageClass}} col-sm-12 contact-message-alert">
