@@ -1,1 +1,1 @@
-#### Github Repo for Personal Site built in AngularJS
+#### Github Repo for benwinter.co built in AngularJS
